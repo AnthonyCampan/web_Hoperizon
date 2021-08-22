@@ -1,0 +1,118 @@
+/* !---FICHIER CSS POUR STOCKER DU CODE QUI N'EST PAS/PLUS UTILISER POUR L'INSTANT---! */
+
+
+/* -Diaporama CSS- */
+	
+	/* Style slider */
+	.slider{
+		width: 1280px; 													/* !Cette valeur doit etre responsive! */
+		overflow: hidden;
+		margin: auto;
+	}
+
+	/* Style conteneur slides */
+	.slides{
+		width: 4000px;
+		animation: defilement 20s infinite;
+	}
+
+	/* Style slide */
+	.slide{
+		float: left;	
+	}
+
+	/* --Animation defilement-- */
+		@keyframes defilement {
+			0%{
+				transform: translateX(0);
+			}
+			20%{
+				transform: translateX(0);
+			}
+			33%{
+				transform: translateX(-1280px);
+			}
+			53%{
+				transform: translateX(-1280px);
+			}
+			66%{
+				transform: translateX(-3200px);
+			}
+			86%{
+				transform: translateX(-3200px);
+			}
+			100%{
+				transform: translateX(0);
+			}
+		}
+
+/* --Boutons suivant et précedent-- */
+
+		/* Style conteneur boutons */
+		div.dp-fleche-conteneur {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			height: 56px;
+		}
+
+		/* Style des boutons */
+		.prev, .next {
+			position: absolute;
+		  	cursor: pointer;
+		  	width: auto;
+		 	padding: 16px;
+		  	color: white;
+		  	font-weight: bold;
+		  	font-size: 18px;
+		  	transition: 0.6s ease;
+		  	border-radius: 0 3px 3px 0;
+		}
+
+		/* Position du bouton suivant (next) */
+		.next {
+		  	right: 0;
+		  	border-radius: 3px 0 0 3px;
+		}
+
+		/* Survole des boutons */
+		.prev:hover, .next:hover {
+		  	background-color: rgba(0,0,0,0.8);
+		}
+
+
+	/* --Points du diapo-- */
+
+		/* Style conteneur points */
+		div.dp-points-conteneur {
+			position: absolute;
+			width: 80px;
+			bottom: 10px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		/* Style liste points */
+		ol.dp-points {
+			display: flex;
+			list-style: none;
+			justify-content: space-between;
+			padding: 0;
+		}
+
+		/* Style points */
+		.points {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  transition: background-color 0.6s ease;
+		}
+
+		/* Survole des points */
+		.active, .points:hover {
+		  background-color: #717171;
+		}

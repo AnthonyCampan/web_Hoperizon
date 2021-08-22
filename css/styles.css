@@ -1,0 +1,615 @@
+body {
+	margin: 0 auto;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+h1 {
+	text-align: center;
+	width: 100%;
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+
+ul {
+	list-style: none;
+	text-decoration: none;
+	padding: 0;
+}
+
+/* -Navbar- */
+			
+	/* Style de la navbar */
+	section.navbar {
+		display: flex;
+		align-items: center;
+		box-shadow: 0px 2px black;
+		background-color: white;
+	}
+
+	/* --Menu-- */
+
+		/* Style du menu */
+		nav.navbar-menu {
+			display: flex;
+			list-style: none;
+			justify-content: space-between;
+		}		
+
+		/* Style ancres du menu */
+		nav.navbar-menu li a {
+			color: black;
+			text-decoration: none;
+			font-family: Montserrat;
+			font-weight: bold;
+		}
+
+		/* Style du menu survol curseur */
+		.ap:hover, .clmt:hover, .crc:hover, .ct:hover, .ml:hover {
+			color: #47b76c;
+		}
+
+	/* --Liens reseaux sociaux-- */
+
+		/* Style du conteneur des liens RS */
+		ul.navbar-social {
+			display: flex;
+			list-style: none;
+			justify-content: space-between;
+			padding: 0;
+		}
+
+		/* Style des liens RS */
+		ul.navbar-social li a {
+			color: #47b76c;
+			text-decoration: none;
+		}
+
+/* -Diaporama- */
+
+	/* Style du conteneur diapo */
+	div.div-diapo {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1000;
+	}
+
+	/* --Images-- */
+		/* Style des li */
+		li.slide {
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+			width: 100%;
+			height: inherit;
+			display: none;
+		}
+
+	/* --Fondu animation-- */
+		.animation {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 2s;
+		  animation-name: fade;
+		  animation-duration: 2s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: 0}
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: 0}
+		  to {opacity: 1}
+		}
+
+	/* Style dégradé */
+	div.degrade {
+		background: linear-gradient(transparent,rgba(2,23,30,.6) 90%);
+		z-index: 5000;
+		width: 100%;
+		height: 750px;
+	}
+
+
+/* -Main- */
+	
+	/* Style des separations */
+	div.separation {
+			width: 100%;
+			height: 20px;
+			background-color: #47b76c;
+		}
+
+	main.main p, li{
+		font-size: 20px;
+		font-family: Montserrat;
+		line-height: 1.6em;
+		text-align: center;
+	}
+
+	main.main h1 {
+		font-size: 32px;
+		font-family: Montserrat;
+	}
+
+	main.main h2 {
+		font-size: 26px;
+		font-family: Montserrat;
+		margin: 0;
+	}
+
+	main.main h3 {
+		font-size: 20px;
+		font-family: Montserrat;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: row;
+		padding: 30px;
+	}
+
+	.row-reverse-column {
+		display: flex;
+		flex-direction: row-reverse;
+		padding: 30px;
+	}
+
+	.row-column {
+		display: flex;
+		flex-direction: row;
+		padding: 30px;
+		justify-content: space-between;
+	}
+	
+	.column {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.column-row {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* --Section A propos--  */
+
+		section.a-propos {
+			background-color: white;
+		}
+
+		p.msg-bvn {
+			color: #47b76c;
+			font-size: 18px;			
+			font-weight: bold;
+			width: 100%;
+			text-align: left;
+			margin: 0;
+		}
+
+		p.auteur {
+			width: 100%;
+			margin: 0;
+			text-align: right;
+		}
+
+		blockquote {
+			font-size: 24px;
+			font-style: italic;
+			margin-bottom: 0;
+		}
+
+	/* --Section Le climat--  */
+
+		section.le-climat {
+			background-color: #47b76c;
+		}
+
+		.carte {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			/*background-color: #47A06c;*/ /* Plus foncé */
+			background-color: #47c56c; /* Plus clair */
+			text-align: center;
+			box-shadow: 0px 0px 10px 5px rgb(31 35 35 / 15%);
+			border-radius: 30px;
+			width: 100%;
+			height: 165px;
+		}
+
+		.carte p {
+			font-weight: bold;
+			margin: 0;
+		}
+
+		section.le-climat div.column {
+			justify-content: center;
+		}
+
+		section.le-climat ul {
+			align-items: center;
+			justify-content: space-evenly;
+			margin: 0;
+			padding: 10px;
+		}
+
+		.div-icon-clmt {
+			padding: 0;
+			width: 50%;
+			justify-content: space-evenly;
+		}
+
+	/* --Section Notre projet--  */
+
+		section.notre-projet {
+			background-color: #292b2a;
+			color: #F2F2F2;
+			text-align: center;
+		}
+
+		section.notre-projet div.column {
+			justify-content: center;
+		}
+
+		section.notre-projet ul {
+			list-style: none;
+			justify-content: space-between;
+		}
+
+		section.notre-projet .esp {
+			color: #F2F2F2;
+			border: 3px #47b76c solid;
+			text-decoration: none;
+			padding: 6px;
+		}
+
+		.crc-pole img {
+			padding-top: 30px;
+		}
+
+		.crc-pole{
+		    width: 150px;
+		    height: 150px;
+		    border: 5px #47b76c solid;
+		    border-radius: 50%;
+			margin: auto;
+		}
+
+		.div-icon-clmt {
+			padding: 0;
+			width: 50%;
+			justify-content: space-evenly;
+		}
+
+
+	/* --Section Soutenez nos actions-- */
+
+		section.soutenez-nos-actions {
+			background-color: #47b76c;
+		}
+
+		section.soutenez-nos-actions div.row div.column{
+			align-items: center;
+		}
+
+		.sna-actions img {
+			padding-top: 30px;
+			padding-left: 30px;
+		}
+
+		.sna-actions{
+		    width: 150px;
+		    height: 150px;
+		    border: 5px black solid;
+		    border-radius: 50%;
+		}
+
+	/* --Section Partenaires-- */
+
+		section.nos-partenaires {
+			background-color: white;
+		}
+
+		.npa {
+			flex-flow: row wrap;
+			justify-content: space-evenly;
+		}
+
+		.part {
+			width: 200px;
+		}
+
+	/* --Section Pied-de-page */
+
+		section.pied-de-page {
+			height: 250px;
+			background-color: #292b2a;
+			color: white;
+		}
+
+
+		@media screen and (max-width: 799px) {
+			/* -Navbar- */
+				/* Style navbar */
+				section.navbar {
+					justify-content: center;
+				}
+				/* --Logo-- */
+					/* Style logo navbar */
+					section.navbar img {
+						width: 220px;
+					}
+				/* --Menu-- */
+					/* Style du menu */
+					nav.navbar-menu {
+						display: none;
+					}
+				/* --Liens reseaux sociaux-- */
+					/* Style du conteneur des liens RS */
+					ul.navbar-social {
+						display: none;
+					}
+				/* --Menu deroulant-- */
+					/* style menu deroulant */
+					section.navbar button {
+						display: block;
+						position: absolute;
+						right: 10px;
+					}
+			/* -Diaporama- */
+				/* --Dégradé-- */
+					/* Style dégradé */
+					div.degrade {
+						height: 550px;
+					}
+							
+			/* -Main- */
+				.row-reverse-column, .row-column{
+					flex-direction: column;
+				}
+				.column-row {
+					flex-direction: row;
+				}
+				/* --Menu déroulant-- */
+					/* Style div menu */
+					div.menu-deroulant {
+						display: none;
+						position: fixed;
+						height: 100%;
+						width: 100%;
+						background-color: #F2F2F2;
+						top: 36px;
+						transition: 0.5s;
+						font-size: 35px;
+						padding-top: 40px;
+					}
+					/* ---Liens/Ancres--- */
+						/* Style liens/ancres */
+						ul.md-liens a {
+							color: black;
+							font-family: Montserrat;
+							font-size: 30px;
+							font-weight: bold;
+							line-height: 85px;
+							text-decoration: none;
+							
+						}
+					/* ---Liens reseaux sociaux--- */
+						/* Style du conteneur des liens RS */
+						ul.md-social {
+							display: flex;
+							list-style: none;
+							justify-content: space-evenly;
+							padding: 0;
+							margin-top: 70px;
+						}
+						/* Style des liens RS */
+						ul.md-social li a {
+							color: #47b76c;
+							text-decoration: none;
+							font-size: 35px;
+						}
+				/* --Section A propos--  */
+
+				/* --Section Le climat--  */
+					/* Style div column */
+					section.le-climat div.column {
+						width: 100%;
+					}
+					/* Style div icones */
+					.div-icon-clmt {
+						width: 100%;
+					}
+					/* ---Cartes--- */
+						/* Style carte */
+						.carte {
+							min-width: 90px;
+							max-width: 120px;
+						}
+						/* Style font carte */
+						li.carte p {
+							font-size: 16px;
+						}
+				/* --Section Notre projet--  */
+					/* Style div column */
+					section.notre-projet div.column {
+						width: 100%;
+					}
+				/* --Section Soutenez nos actions-- */
+					/* Style div column */
+					section.soutenez-nos-actions div.row div.column {
+						width: 50%;
+					}
+
+		}
+
+
+		@media (min-width: 800px) and (max-width: 1199px) {
+			/* -Navbar- */
+				/* Style navbar */
+				section.navbar {
+					padding-left: 10px;
+					padding-right: 10px;
+					justify-content: space-between;
+				}
+				/* --Logo-- */
+					/* Style logo navbar */
+					section.navbar img {
+						width: 270px;
+					}
+				/* --Menu-- */
+					/* Style du menu */
+					nav.navbar-menu {
+						width: 45%;
+					}
+					/* Style liens du menu */
+					nav.navbar-menu li a {
+						font-size: 0.8em;
+					}
+				/* --Liens reseaux sociaux-- */
+					/* Style du conteneur des liens RS */
+					ul.navbar-social {
+						width: 80px;
+					}
+					/* Style des liens RS */
+					ul.navbar-social a {
+						font-size: 20px;
+					}
+				/* --Menu deroulant-- */
+					/* style menu deroulant */
+					section.navbar button {
+						display: none;
+					}
+			/* -Diaporama- */
+				/* --Dégradé-- */
+					/* Style dégradé */
+					div.degrade {
+						height: 650px;
+					}
+
+			/* -Main- */
+				/* --Menu déroulant-- */
+					/* Style div menu */
+					div.menu-deroulant {
+						display: none;
+					}
+				/* --Section A propos--  */
+
+				/* --Section Le climat--  */
+					/* Style carte */
+					.carte {
+						max-width: 120px;
+						max-height: 155px;
+					}
+					/* Style div column */
+					section.le-climat div.column {
+						width: 50%;
+					}
+					/* Style div icones */
+					.div-icon-clmt {
+						width: 50%;
+						height: 350px;
+					}
+				/* --Section Notre projet--  */
+					/* Style div column */
+					section.notre-projet div.column {
+						width: 50%;
+					}
+				/* --Section Soutenez nos actions-- */
+					/* Style div column */
+					section.soutenez-nos-actions div.row div.column {
+						width: 50%;
+					}
+		}
+
+
+		@media (min-width: 1200px) {
+			/* -Navbar- */
+				/* Style navbar */
+				section.navbar {
+					padding-left: 30px;
+					padding-right: 30px;
+					justify-content: space-between;
+				}
+				/* --Logo-- */
+					/* Style logo navbar */
+					section.navbar img {
+						width: 350px;
+					}
+				/* --Menu-- */
+					/* Style du menu */
+					nav.navbar-menu {
+						width: 50%;
+					}
+					/* Style liens du menu */
+					nav.navbar-menu li a {
+						font-size: 1em;
+					}
+				/* --Liens reseaux sociaux-- */
+					/* Style du conteneur des liens RS */
+					ul.navbar-social {
+						width: 100px;
+					}
+					/* Style des liens RS */
+					ul.navbar-social a {
+						font-size: 25px;
+					}
+				/* --Menu deroulant-- */
+					/* style menu deroulant */
+					section.navbar button {
+						display: none;
+					}
+			/* -Diaporama- */
+				/* --Dégradé-- */
+					/* Style dégradé */
+					div.degrade {
+						height: 750px;
+					}
+
+			/* -Main- */
+				/* --Menu déroulant-- */
+					/* Style div menu */
+					div.menu-deroulant {
+						display: none;
+					}
+				/* --Section A propos--  */
+					/* Style div column */
+					section.a-propos div.column {
+						width: 50%;
+					}
+				/* --Section Le climat--  */
+					/* Style carte */
+					.carte {
+						max-width: 150px;
+						max-height: 150px;
+					}
+					/* Style div column */
+					section.le-climat div.column {
+						width: 50%;
+					}
+					/* Style div icones */
+					.div-icon-clmt {
+						width: 50%;
+						height: 350px;
+					}
+				/* --Section Notre projet--  */
+					/* Style div column */
+					section.notre-projet div.column {
+						width: 50%;
+					}
+				/* --Section Soutenez nos actions-- */
+					/* Style div column */
+					section.soutenez-nos-actions div.row div.column {
+						width: 50%;
+					}
+		}
