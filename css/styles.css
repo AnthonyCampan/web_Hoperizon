@@ -130,10 +130,8 @@ ul {
 		}
 
 	main.main p, li{
-		font-size: 20px;
 		font-family: Montserrat;
-		line-height: 1.6em;
-		text-align: center;
+		text-align: justify;
 	}
 
 	main.main h1 {
@@ -187,25 +185,37 @@ ul {
 			background-color: white;
 		}
 
-		p.msg-bvn {
+		section.a-propos div.column {
+			justify-content: center;
+			align-content: center;
+		}
+
+		#msg-bvn {
 			color: #47b76c;
 			font-size: 18px;			
 			font-weight: bold;
 			width: 100%;
-			text-align: left;
 			margin: 0;
+			text-align: center;
 		}
-
-		p.auteur {
-			width: 100%;
-			margin: 0;
-			text-align: right;
+		
+		section.a-propos img {
+			align-self: center;
 		}
 
 		blockquote {
 			font-size: 24px;
 			font-style: italic;
-			margin-bottom: 0;
+			margin-bottom: 5px;
+			text-align: justify;
+			align-self: center;
+		}
+		
+		#auteur {
+			margin-left: 40px;
+			margin-right: 40px;
+			text-align: right;
+			align-self: center;
 		}
 
 	/* --Section Le climat--  */
@@ -380,6 +390,10 @@ ul {
 				.column-row {
 					flex-direction: row;
 				}
+				main.main p, li{
+					font-size: 18px;
+					line-height: 1.6em;
+				}
 				/* --Menu déroulant-- */
 					/* Style div menu */
 					div.menu-deroulant {
@@ -420,7 +434,18 @@ ul {
 							font-size: 35px;
 						}
 				/* --Section A propos--  */
-
+					/* Style image logo */
+					section.a-propos img {
+						width: 350px;
+					}
+					/* Style blockquote */
+					section.a-propos blockquote{
+						width: 325px;
+					}
+					/* Style auteur */
+					#auteur{
+						width: 325px;
+					}
 				/* --Section Le climat--  */
 					/* Style div column */
 					section.le-climat div.column {
@@ -498,13 +523,33 @@ ul {
 					}
 
 			/* -Main- */
+				/* Style p, li du main */
+				main.main p, li{
+					font-size: 18px;
+					line-height: 1.6em;
+				}
 				/* --Menu déroulant-- */
 					/* Style div menu */
 					div.menu-deroulant {
 						display: none;
 					}
 				/* --Section A propos--  */
-
+					/* Style div column */
+					section.a-propos div.column {
+						width: 48%;
+					}
+					/* Style image logo */
+					section.a-propos img {
+						width: 350px;
+					}
+					/* Style blockquote */
+					section.a-propos blockquote{
+						width: 300px;
+					}
+					/* Style auteur */
+					#auteur{
+						width: 300px;
+					}
 				/* --Section Le climat--  */
 					/* Style carte */
 					.carte {
@@ -577,6 +622,11 @@ ul {
 					}
 
 			/* -Main- */
+				/* Style p, li du main */
+				main.main p, li{
+					font-size: 20px;
+					line-height: 1.6em;
+				}
 				/* --Menu déroulant-- */
 					/* Style div menu */
 					div.menu-deroulant {
@@ -586,6 +636,18 @@ ul {
 					/* Style div column */
 					section.a-propos div.column {
 						width: 50%;
+					}
+					/* Style image logo */
+					section.a-propos img {
+						width: 500px;
+					}
+					/* Style blockquote */
+					section.a-propos blockquote{
+						width: 475px;
+					}
+					/* Style auteur */
+					#auteur{
+						width: 475px;
 					}
 				/* --Section Le climat--  */
 					/* Style carte */
