@@ -191,8 +191,7 @@ ul {
 		}
 
 		#msg-bvn {
-			color: #47b76c;
-			font-size: 18px;			
+			color: #47b76c;			
 			font-weight: bold;
 			width: 100%;
 			margin: 0;
@@ -204,14 +203,14 @@ ul {
 		}
 
 		blockquote {
-			font-size: 24px;
 			font-style: italic;
-			margin-bottom: 5px;
+			margin-bottom: 0;
 			text-align: justify;
 			align-self: center;
 		}
 		
 		#auteur {
+			margin-top: 5px;
 			margin-left: 40px;
 			margin-right: 40px;
 			text-align: right;
@@ -407,6 +406,9 @@ ul {
 						font-size: 35px;
 						padding-top: 40px;
 					}
+					div.menu-deroulant li{
+						text-align: center;
+					}
 					/* ---Liens/Ancres--- */
 						/* Style liens/ancres */
 						ul.md-liens a {
@@ -434,13 +436,22 @@ ul {
 							font-size: 35px;
 						}
 				/* --Section A propos--  */
+					/* Style msg bienvenue */
+					#msg-bvn {
+						font-size: 19px;
+					}
 					/* Style image logo */
 					section.a-propos img {
-						width: 350px;
+						box-sizing: border-box;
+						max-width: 525px;
+						width: 100%;
+						padding-left: 10px;
+						padding-right: 10px;
 					}
 					/* Style blockquote */
 					section.a-propos blockquote{
 						width: 325px;
+						font-size: 19px;
 					}
 					/* Style auteur */
 					#auteur{
@@ -538,13 +549,22 @@ ul {
 					section.a-propos div.column {
 						width: 48%;
 					}
+					/* Style msg bienvenue */
+					#msg-bvn {
+						font-size: 20px;
+					}
 					/* Style image logo */
 					section.a-propos img {
-						width: 350px;
+						box-sizing: border-box;
+						max-width: 480px;
+						padding-right: 10px;
+						padding-left: 10px;
+						width: 100%;
 					}
 					/* Style blockquote */
 					section.a-propos blockquote{
 						width: 300px;
+						font-size: 23px;
 					}
 					/* Style auteur */
 					#auteur{
@@ -637,13 +657,22 @@ ul {
 					section.a-propos div.column {
 						width: 50%;
 					}
+					/* Style msg bienvenue */
+					#msg-bvn {
+						font-size: 24px;
+					}
 					/* Style image logo */
 					section.a-propos img {
-						width: 500px;
+						box-sizing: border-box;
+						max-width: 600px;
+						padding-right: 20px;
+						padding-left: 20px;
+						width: 100%;
 					}
 					/* Style blockquote */
 					section.a-propos blockquote{
 						width: 475px;
+						font-size: 25px;
 					}
 					/* Style auteur */
 					#auteur{
